@@ -2,7 +2,7 @@ role :site, 'anachromystic.com'
 
 desc "Copy the index.html file to the server."
 task :scp, :roles => :site do
-  upload 'index.html', '~/pocketrails.com', :via => :scp
+  upload 'index.html', '~/anachromystic.com', :via => :scp
 end
 
 task :deploy do
