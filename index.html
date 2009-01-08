@@ -6,23 +6,30 @@
 <style type="text/css">
 body {
 font-family: Helvetica;
+color: gray;	
 text-align: center;
 }
-h1 {
-font-size: 66pt;
-}
-h1 span {
+body, h1, h2 {
 font-size: 22pt;
-color: gray;
 }
 h2 {
-font-size: 22pt;
-color: gray;
+font-weight: normal;
+}
+#company {
+color: black;
+font-size: 200%;
+}
+a {
+text-decoration: none;
+color: darkred;
+}
+a:hover {
+text-decoration: underline;
 }
 </style>
 </head>
 <body>
-<h1><span>ted@</span>anachromystic<span>.com</span></h1>
+<h1>ted@<span id="company">anachromystic</span>.com</h1>
 <h2>
 Ruby
 &middot;
@@ -32,6 +39,13 @@ iPhone
 &middot;
 Erlang
 </h2>
+
+<h2>
+Pet Projects:
+<a href="http://pocketrails.com">Pocket Rails</a>,
+<a href="http://marina.anachromystic.com">Rate Marina's Outfits</a>.
+</h2>
+
 <script type="text/javascript">
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
 document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
