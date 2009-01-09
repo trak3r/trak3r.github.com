@@ -6,14 +6,9 @@
 		<style type="text/css">
 body {
 	font-family: Helvetica;
-	background-color: gray;
 }
-#card {
+#shadow-container .container {
 	text-align: center;
-	border: thin solid black;
-	background-color: white;
-	width: 520px;
-	padding: 30px 0px 30px 0px;
 }
 #email {
 	padding-top: 74px;
@@ -23,14 +18,16 @@ body {
 	font-size: 150%;
 }
 #name {
+	padding-top: 20px;
 	font-family: Times New Roman;
 	font-size: 24pt;
 }
 #skills {
-	font-size: 14pt;
+	font-size: 12pt;
 }
 #portfolio {
 	padding-top: 74px;
+	padding-bottom: 20px;
 	font-size: 10pt;
 }
 a {
@@ -39,6 +36,40 @@ a {
 }
 a:hover {
 	text-decoration: underline;
+}
+
+#shadow-container {
+    position: relative;
+    left: 3px;
+    top: 3px;
+    margin-right: 3px;
+    margin-bottom: 3px;
+}
+
+#shadow-container .shadow2,
+#shadow-container .shadow3,
+#shadow-container .container {
+    position: relative;
+    left: -1px;
+    top: -1px;
+}
+
+#shadow-container .shadow1 {
+    background: #F1F0F1;
+}
+
+#shadow-container .shadow2 {
+    background: #DBDADB;
+}
+
+#shadow-container .shadow3 {
+    background: #B8B6B8;
+}
+
+#shadow-container .container {
+    background: #ffffff;
+    border: 1px solid #848284;
+    padding: 10px;
 }
 
 #outer {height: 400px; overflow: hidden; position: relative;}
@@ -59,37 +90,47 @@ body, html {height: 96%;}
 		</style>
 	</head>
 	<body>
-		<div id="outer">
-			<div id="middle">
-				<div id="inner">
-					<div id="card">
-						<div id="name">
-							Thomas
-							&#8220;Teflon Ted&#8221;	
-							Davis
-						</div>
-						<div id="skills">
-							Ruby
-							&middot;
-							Rails
-							&middot;
-							iPhone
-							&middot;
-							Erlang			
-						</div>
-						<div id="email">
-							ted@<span id="company">anachromystic</span>.com
-						</div>
-						<div id="portfolio">
-							Portfolio:
-							<a href="http://pocketrails.com">Pocket Rails</a>,
-							<a href="http://marina.anachromystic.com">Rate Marina's Outfits</a>,
-							<a href="http://stinkychic.blogspot.com/2007/09/ckin2u.html">Stinky Chic</a>.
-						</div>
-					</div>
+<div id="outer">
+	<div id="middle">
+		<div id="inner">
+<div id="shadow-container">
+    <div class="shadow1">
+        <div class="shadow2">
+            <div class="shadow3">
+                <div class="container">
+<div id="card">
+	<div id="name">
+		Thomas
+		&#8220;Teflon Ted&#8221;	
+		Davis
+	</div>
+	<div id="skills">
+		Ruby
+		&middot;
+		Rails
+		&middot;
+		iPhone
+		&middot;
+		Erlang			
+	</div>
+	<div id="email">
+		ted@<span id="company">anachromystic</span>.com
+	</div>
+	<div id="portfolio">
+		Portfolio:
+		<a href="http://pocketrails.com">Pocket Rails</a>,
+		<a href="http://marina.anachromystic.com">Rate Marina's Outfits</a>,
+		<a href="http://stinkychic.blogspot.com/2007/09/ckin2u.html">Stinky Chic</a>.
+	</div>
+</div>
 				</div>
-			</div>
+            </div>
+        </div>
+    </div>
+</div>			
 		</div>
+	</div>
+</div>
 
 <script type="text/javascript">
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
