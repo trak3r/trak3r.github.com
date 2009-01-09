@@ -6,10 +6,10 @@
 		<style type="text/css">
 body {
 	font-family: Helvetica;
-	text-align: center;
 	background-color: gray;
 }
 #card {
+	text-align: center;
 	border: thin solid black;
 	background-color: white;
 	width: 520px;
@@ -40,32 +40,54 @@ a {
 a:hover {
 	text-decoration: underline;
 }
+
+#outer {height: 400px; overflow: hidden; position: relative;}
+#outer[id] {display: table; position: static;}
+
+#middle {position: absolute; top: 50%;} /* for explorer only*/
+#middle[id] {display: table-cell; vertical-align: middle; position: static;}
+
+#inner {position: relative; top: -50%} /* for explorer only */
+/* optional: #inner[id] {position: static;} */
+
+#outer {width: 100%;}
+#inner {width: 520px; margin-left: auto; margin-right: auto;}
+
+body, html {height: 96%;}
+#outer {height: 100%; overflow: visible;} /* or without overflow */
+
 		</style>
 	</head>
 	<body>
-		<div id="card">
-			<div id="name">
-				Thomas
-				&#8220;Teflon Ted&#8221;	
-				Davis
-			</div>
-			<div id="skills">
-				Ruby
-				&middot;
-				Rails
-				&middot;
-				iPhone
-				&middot;
-				Erlang			
-			</div>
-			<div id="email">
-				ted@<span id="company">anachromystic</span>.com
-			</div>
-			<div id="portfolio">
-				Portfolio:
-				<a href="http://pocketrails.com">Pocket Rails</a>,
-				<a href="http://marina.anachromystic.com">Rate Marina's Outfits</a>,
-				<a href="http://stinkychic.blogspot.com/2007/09/ckin2u.html">Stinky Chic</a>.
+		<div id="outer">
+			<div id="middle">
+				<div id="inner">
+					<div id="card">
+						<div id="name">
+							Thomas
+							&#8220;Teflon Ted&#8221;	
+							Davis
+						</div>
+						<div id="skills">
+							Ruby
+							&middot;
+							Rails
+							&middot;
+							iPhone
+							&middot;
+							Erlang			
+						</div>
+						<div id="email">
+							ted@<span id="company">anachromystic</span>.com
+						</div>
+						<div id="portfolio">
+							Portfolio:
+							<a href="http://pocketrails.com">Pocket Rails</a>,
+							<a href="http://marina.anachromystic.com">Rate Marina's Outfits</a>,
+							<a href="http://stinkychic.blogspot.com/2007/09/ckin2u.html">Stinky Chic</a>.
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 
