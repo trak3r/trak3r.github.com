@@ -1,50 +1,74 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
-<head>
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<title>anachromystic</title>
-<style type="text/css">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<title>anachromystic</title>
+		<style type="text/css">
 body {
-font-family: Helvetica;
-color: gray;	
-text-align: center;
+	font-family: Helvetica;
+	text-align: center;
+	background-color: gray;
 }
-body, h1, h2 {
-font-size: 22pt;
+#card {
+	border: thin solid black;
+	background-color: white;
+	width: 520px;
+	padding: 30px 0px 30px 0px;
 }
-h2 {
-font-weight: normal;
+#email {
+	padding-top: 74px;
+	font-size: 16pt;
 }
 #company {
-color: black;
-font-size: 200%;
+	font-size: 150%;
+	color: darkred;
+}
+#name {
+	font-family: Times New Roman;
+	font-size: 24pt;
+}
+#skills {
+	font-size: 15pt;
+}
+#portfolio {
+	padding-top: 74px;
+	font-size: 10pt;
 }
 a {
-text-decoration: none;
-color: darkred;
+	text-decoration: none;
+	color: darkred;
 }
 a:hover {
-text-decoration: underline;
+	text-decoration: underline;
 }
-</style>
-</head>
-<body>
-<h1>ted@<span id="company">anachromystic</span>.com</h1>
-<h2>
-Ruby
-&middot;
-Rails
-&middot;
-iPhone
-&middot;
-Erlang
-</h2>
-
-<h2>
-Pet Projects:
-<a href="http://pocketrails.com">Pocket Rails</a>,
-<a href="http://marina.anachromystic.com">Rate Marina's Outfits</a>.
-</h2>
+		</style>
+	</head>
+	<body>
+		<div id="card">
+			<div id="name">
+				Thomas
+				"Teflon Ted"
+				Davis
+			</div>
+			<div id="skills">
+				Ruby
+				&middot;
+				Rails
+				&middot;
+				iPhone
+				&middot;
+				Erlang			
+			</div>
+			<div id="email">
+				ted@<span id="company">anachromystic</span>.com
+			</div>
+			<div id="portfolio">
+				Portfolio:
+				<a href="http://pocketrails.com">Pocket Rails</a>,
+				<a href="http://marina.anachromystic.com">Rate Marina's Outfits</a>,
+				<a href="http://stinkychic.blogspot.com/2007/09/ckin2u.html">Stinky Chic</a>.
+			</div>
+		</div>
 
 <script type="text/javascript">
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
@@ -55,5 +79,6 @@ try {
 var pageTracker = _gat._getTracker("UA-1377203-5");
 pageTracker._trackPageview();
 } catch(err) {}</script>
-</body>
+
+	</body>
 </html>
