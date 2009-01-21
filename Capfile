@@ -8,6 +8,7 @@ end
 desc "Copy the index.html file to the server."
 task :scp, :roles => :site do
   upload 'index.html', '~/anachromystic.com', :via => :scp
+  upload 'blueprint', '~/anachromystic.com', :via => :scp, :recursive => true
 end
 
 task :deploy do
