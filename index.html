@@ -11,9 +11,36 @@
     <!-- Import fancy-type plugin for the sample page. -->
     <link rel="stylesheet" href="blueprint/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
     <style type="text/css">
+body {
+  background-color: black;
+  font-size: small;
+}
+h1, h2 {
+  color: #C0C0C0 !important;
+}
+h2 {
+  font-style: italic;
+}
+.info {
+  background: url(images/box_top.png) no-repeat;
+  padding-top: 2.5em;
+  height: 21em;
+}
+.contact {
+  text-align: center;
+}
+hr {
+  background-color: transparent !important;
+}
 a, a:hover, a:visited {
-    text-decoration: none;      
-    }
+  letter-spacing: 0.4em;
+  font-size: medium;
+  text-decoration: none; 
+  color: #C0C0C0 !important;     
+}
+img.buffered {
+  padding-left: 0.5em;
+}
     </style>
   </head>
   <body>
@@ -22,46 +49,49 @@ a, a:hover, a:visited {
       <hr class="space">
       <div class="span-24 last">
         <h1>
-          Anachromystic
+          <img alt="Anachromystic" src="images/anachromystic_logo.png">
         </h1>
       </div>
       <div class="span-24 last">
-        <h2 class="alt">
+        <h2>
           Technology consultants specializing in Ruby on Rails and iPhone development
         </h2>
       </div>
       <hr class="space">
-      <hr class="space">
-      <div class="span-7">
+      <div class="info span-6 prepend-1 append-1">
         <h3 class="caps">
           Who we are
         </h3>
+        <img alt="briefcase" src="images/who_we_are_icon.png" align="right">
         <p>
           Grizzled seasoned veterans of the first dot-com bubble. No newbies here. Having started at the bottom as system administrators and code monkeys, we've worked our way up over the years earning the prestigious titles of Chief This and Vice President of That. But we yearn for the good old days of small tight-knit teams, fresh ideas, and vivacious start-ups.
         </p>
       </div>
-      <div class="span-7 prepend-1 append-1">
+      <div class="info span-6 prepend-1 append-1">
         <h3 class="caps">
           What we do
         </h3>
+        <img alt="lightbulb" src="images/what_we_do_icon.png" align="right" class="buffered">
         <p>
           We specialize in bootstrapping technologies for fledgling companies, ensuring they will be able to grow their teams and scale their products or services with celerity. We pride ourselves on meticulous quality of process and code, leveraging proven tools and techniques, and mentoring our colleagues. We take ownership of our responsibilities.
         </p>
       </div>
-      <div class="span-7 last">
+      <div class="info span-6 prepend-1 append-1 last">
         <h3 class="caps">
           How we can help
         </h3>
+        <img alt="lifesaver" src="images/how_we_help_icon.png" align="right">
         <p>
           Whether you need a full-time Chief Technology Officer to help build your company or a short-term commando team of all-star developers to get your product boot-strapped and off the ground fast, Anachromystic has a personal personnel solution. Please don't hesitate to contact us for a consultation; it's a critical first step in the future of your company's success.
         </p>
       </div>
       <hr class="space">
       <hr class="space">
-      <div class="span-6 prepend-9 last">
-        <a class="quiet" href="mailto:contact@anachromystic.com">contact@anachromystic.com</a>
+      <div class="contact span-24 last">
+        <a href="mailto:contact@anachromystic.com">contact@anachromystic.com</a>
       </div>
-    </div><script type="text/javascript">
+    </div>
+    <script type="text/javascript">
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
     document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
     </script><script type="text/javascript">
